@@ -1,0 +1,83 @@
+header{
+    margin-top: 0px;
+    /*display:block;*/
+    height: 100px;
+    background-color:floralwhite;
+    text-align: center;    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}  
+header ul{
+    list-style:none;  
+    text-align: center;  
+}
+header ul li{
+    display: inline;     
+}
+header ul li a{
+    text-decoration: none;   
+    font-size: 20px;
+    padding: 20px;
+    color: black;
+}
+
+.vl{
+    border-left: 1px solid black ;
+    height: 6%;
+    display: inline;
+    position:absolute;
+    top: 11.5%;
+}
+main{
+    background-image: url('C:/Users/kkrit/OneDrive/Desktop/Webprogramming miniproject/background.webp');
+}
+
+input[type=text]{
+    background-color:floralwhite;
+    height: 30px;
+    width: 400px;
+    border: none;
+    border-bottom: 2px solid  lightgray; ;
+}
+input[type=textarea]{
+    background-color:floralwhite;
+    height: 30px;
+    width: 400px;
+    border: none;
+    border-bottom: 2px solid  lightgray; ;
+}
+
+input[type=email]{
+    background-color:floralwhite;
+    height: 30px;
+    width: 400px;
+    border: none;
+    border-bottom: 2px solid  lightgray; ;
+}
+.form-container {
+    width: 500px;
+    margin: 20px auto;
+    padding: 30px 30px 30px;
+    border: 2px solid #ccc;
+    background-color:floralwhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input[type=submit]{
+    height: 30px;
+    top: 10px;
+    width : 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:rgba(87, 61, 9, 0.647);
+    color: floralwhite;
+    border-color: floralwhite;
+
+}
+
+footer{
+    /*margin-top: 0px;
+    /*display:block;*/
+    height: 50px;
+    background-color:floralwhite;
+    text-align: center;    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
