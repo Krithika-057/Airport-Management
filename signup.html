@@ -3,27 +3,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
-    <link rel="stylesheet" type="text/css" href="C:\Users\kkrit\OneDrive\Desktop\Webprogramming miniproject\form.css">
+    <link rel="stylesheet" type="text/css" href="C:\Users\Mclab-43\Desktop\23C081\form.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function validateForm(){
+            let password = document.getElementById("password").value;
+           
+            let confirmPassword = document.getElementById("confirmPassword").value;
+            if(password != confirmPassword){
+                alert("Passwords donot match");
+                return false;
+            }
+            else{
+                alert("Registered successfully");
+                return true;
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
         
-        <h1 style="text-align: center;" >KMK AVIATION</h1>
+        <p style="text-align: center;font-size:40px;" >KMR AVIATION</p>
         
         
         <ul> 
             <hr>
-            <div class="vl" ></div>
-            <li><a href=" ">HOME</a></li>
-            <div class="vl" ></div>
-            <li><a href=" ">ABOUT</a></li>
-            <div class="vl" ></div>
-            <li><a href=" ">OUR SERVICES</a></li>
-            <div class="vl" ></div>
-            <li><a href=" ">EXPERTISE</a></li>
-            <div class="vl" ></div>
-            <li><a href=" ">CONTACT  US</a></li>
-            <div class="vl" ></div>
+        
+            <li aria-expanded="false"><a href=" " ><button class="menu-item" aria-label="HOME" aria-expanded="false">HOME
+            </button></a></li>
+            <li aria-expanded="false"><a href=" " ><button class="menu-item" aria-label="HOME" aria-expanded="false">SERVICES
+            </button></a></li>
+            <li aria-expanded="false"><a href=" " ><button class="menu-item" aria-label="HOME" aria-expanded="false">CUSTOMER SUPPORT
+            </button></a></li>
+            <li aria-expanded="false"><a href=" " ><button class="menu-item" aria-label="HOME" aria-expanded="false">AIRPORT SERVICES
+            </button></a></li>
+            <li aria-expanded="false"><a href=" " ><button class="menu-item" aria-label="HOME" aria-expanded="false">ABOUT
+            </button></a></li>
+            <li aria-expanded="false"><a href=" " ><button class="menu-item" aria-label="HOME" aria-expanded="false">CAREERS
+            </button></a></li>
+            <li aria-expanded="false"><a href=" " ><button class="menu-item" aria-label="HOME" aria-expanded="false">NEWS & EVENTS
+            </button></a></li> 
+            <li aria-expanded="false"><button class="menu-item" aria-label="HOME" aria-expanded="false">SEARCH&#128269; 
+            </button></a></li> 
+            <li aria-expanded="false"><button class="menu-item" aria-expanded="false"> <i class="fas fa-home"></i>  
+            </button></a></li>       
             <hr>       
         
         </ul>       
@@ -31,24 +55,28 @@
     
     <main>
         <div class="form-container">
-        <form>
-            <h2 style="text-align: center;"> ADMIN SIGN UP </h2>
+        <form id="Admin-signup" action="C:\Users\kkrit\OneDrive\Desktop\Webprogramming miniproject\verified_page.html" method="get" onsubmit="return validateForm()">
+            <h2 style="text-align: center;"> SIGN UP </h2>
 
-            <p> NAME : </p><input type="text"><br>
-            <p> EMAIL :  </p><input type="email"><br>
-            <p> PHONE NUMBER : </p>+91 <input type="text"><br>
-            <p> GENDER : </p><input type="radio" value="female" name="gender">female  <input type="radio" value="male" name="gender">male <input type="radio" value="other" name="gender">other <input type="radio" value="prefer" name="gender">prefer not to say <br>
-            <p> CONSULTATION APPOINTMENT :  </p><input type="date"><br>
-            <p> DESCRIBE YOUR ORGANISATION :  </p><input type="textarea"><br>
+            <p> FIRST NAME : </p><input type="text" id="fname" required><br>
+            <p> LAST NAME : </p><input type="text" id="lname" required><br>
+            <p> EMAIL : </p><input type="email" id="email" required><br>
+            <p> PHONE NUMBER : </p>+91 <input type="text" id="phone" required><br>
+            <p> GENDER : </p><input type="radio" value="female" name="gender" >female <input type="radio" value="male" name="gender">male <input type="radio" value="other" name="gender">other <input type="radio" value="prefer" name="gender">prefer not to say <br>
+            <p> CHOOSE YOUR PASSWORD : </p><input type="password" id="password" required ><br>
+            <p> CONFIRM YOUR PASSWORD : </p><input type="password" id="confirmPassword" required><br>
             <p><input type="checkbox">I consent to receiving emails regarding updates and promotional offers.</p>
+            <p>Already have an account? <a href="C:\Users\Mclab-43\Desktop\23C081\Sign in.html">Sign In</a></p>
 
-            <input type="submit">
-
+            <button type="submit" >Register &rArr;</button>
         </form>
+        
         </div>
+
     </main>
 
     <footer>
-        COPYRIGHTS &copy; 2025, ALL RIGHTS RESERVED BY KMK AVIATION
+        COPYRIGHTS &copy; 2025, ALL RIGHTS RESERVED BY KMR AVIATION
     </footer>
 </body>
+</html>
