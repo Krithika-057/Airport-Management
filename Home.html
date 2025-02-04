@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <link rel="stylesheet" type="text/css" href="C:\Users\Mclab-43\Desktop\23C081\form.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-qzjYMWL+8UNBomt55wgpvAz6dCoK3CTEHc1AmR1uPmym6mnK6PKWWSKIpd6GVJuV" crossorigin="anonymous">  
+    
+</head>
+<body>
+    <header>
+        
+        <p style="text-align: center;font-size:40px;" >KMR AVIATION</p>
+        
+        
+        <ul> 
+            <hr>
+        
+            <li aria-expanded="false"><a href=" " ><button class="menu-item" aria-label="HOME" aria-expanded="false">HOME
+            </button></a></li>
+            <li aria-expanded="false"><a href=" " ><button class="menu-item" aria-label="HOME" aria-expanded="false">SERVICES
+            </button></a></li>
+            <li aria-expanded="false"><a href=" " ><button class="menu-item" aria-label="HOME" aria-expanded="false">CUSTOMER SUPPORT
+            </button></a></li>
+            <li aria-expanded="false"><a href=" " ><button class="menu-item" aria-label="HOME" aria-expanded="false">AIRPORT SERVICES
+            </button></a></li>
+            <li aria-expanded="false"><a href=" " ><button class="menu-item" aria-label="HOME" aria-expanded="false">ABOUT
+            </button></a></li>
+            <li aria-expanded="false"><a href=" " ><button class="menu-item" aria-label="HOME" aria-expanded="false">CAREERS
+            </button></a></li>
+            <li aria-expanded="false"><a href=" " ><button class="menu-item" aria-label="HOME" aria-expanded="false">NEWS & EVENTS
+            </button></a></li> 
+            <li aria-expanded="false"><button class="menu-item" aria-label="HOME" aria-expanded="false">SEARCH&#128269; 
+            </button></a></li> 
+            <li aria-expanded="false"><button class="menu-item" aria-expanded="false"><i class="fa-regular fa-user"></i>
+            </button></a></li>       
+            <hr>       
+        
+        </ul>       
+    </header>
+    
+    <main>
+        <div class="Home-page-intro">
+            <p class="Home-page-intro-heading">EXPLORE NEW DESTINATIONS</p>
+            <div class="Home-page-intro-text"> <p> Exploring new destinations adds a touch of spice to life. Next time you travel, consider travelling with KMR Aviation for a luxurious experience. Remember, you’re writing for the potential customer and not for yourself. They are here with the sole purpose of finding a great tour for themselves. Address that! Find out your target audience. Think out what they are looking for in a tour package and meld your offerings according to their requirements.</p>  
+                <input type="button" value="Book Now" id="booknow" onclick="dialog()">
+                <input type="button" value="Explore" id="explore">
+            </div>
+            <img src="https://static.toiimg.com/thumb/msid-103892975,width-300,height-200.cms" class="Home-page-intro-image-container"> 
+            <div id="overlay"><p id="overlay-text">Here are some of the destinations !<br><input type="button" value="Go back!" onclick="off()"></p></div>
+        </div>
+        
+        
+
+    </main>
+
+    <footer>
+        COPYRIGHTS &copy; 2025, ALL RIGHTS RESERVED BY KMR AVIATION
+    </footer>
+
+    <script>
+        var x = document.getElementById("explore");
+        x.addEventListener("mousedown", dialog);
+        function dialog(){
+            alert("Do you wish to exit this page?");
+            on();
+        }
+        
+           
+        function on() {
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+</body>
+</html>
