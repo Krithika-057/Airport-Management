@@ -84,6 +84,9 @@ input[type=email]{
     border: none;
     border-bottom: 2px solid lightgray; ;
 }
+
+
+
 .form-container {
     width: 500px;
     margin: 20px auto;
@@ -101,7 +104,16 @@ button[type=submit]{
     background-color:rgba(87, 61, 9, 0.647);
     color: floralwhite;
     border-color: floralwhite;
-
+}
+input[type=button]{
+    height: 50px;
+    top: 10px;
+    width : 130px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    background-color:rgba(87, 61, 9, 0.647);
+    color: floralwhite;
+    border-color: floralwhite;
 }
 
 footer{
@@ -117,7 +129,54 @@ footer{
 
 /*Home page*/
 
-.Home-page-image{
+.Home-page-intro{
     display: block;
-    width: device-width;
+    width: 80%;
+    height: 50%;
+    margin: 20px auto;
+    padding: 30px 30px 30px;
+    border: 2px solid #000000;
+    background-color:floralwhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.Home-page-intro-heading{
+    font-size: 300%;
+}
+.Home-page-intro-text{
+    top: 15%;
+    display: inline-block;
+    font-size: 150%;
+    height:fit-content;
+    width:49%;
+
+}
+.Home-page-intro-image-container{
+    display: inline-block;
+    background-image: url("https://static.toiimg.com/thumb/msid-103892975,width-300,height-200.cms");
+    margin-left: 10%;
+    width: 40%;
+}
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+  #overlay-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
