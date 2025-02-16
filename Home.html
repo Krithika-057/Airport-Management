@@ -4,8 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     
-    <link rel="stylesheet" type="text/css" href="C:\Users\Mclab-43\Desktop\23C081\form.css" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-qzjYMWL+8UNBomt55wgpvAz6dCoK3CTEHc1AmR1uPmym6mnK6PKWWSKIpd6GVJuV" crossorigin="anonymous">  
+    <link rel="stylesheet" type="text/css" href="./form.css" >     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     
 </head>
 <body>
@@ -17,7 +17,7 @@
         <ul> 
             <hr>
         
-            <li aria-expanded="false"><a href=" " ><button class="menu-item" aria-label="HOME" aria-expanded="false">HOME
+            <li aria-expanded="false"><a href="Home.html" ><button class="menu-item" aria-label="HOME" aria-expanded="false">HOME
             </button></a></li>
             <li aria-expanded="false"><a href=" " ><button class="menu-item" aria-label="HOME" aria-expanded="false">SERVICES
             </button></a></li>
@@ -44,11 +44,17 @@
         <div class="Home-page-intro">
             <p class="Home-page-intro-heading">EXPLORE NEW DESTINATIONS</p>
             <div class="Home-page-intro-text"> <p> Exploring new destinations adds a touch of spice to life. Next time you travel, consider travelling with KMR Aviation for a luxurious experience. Remember, you’re writing for the potential customer and not for yourself. They are here with the sole purpose of finding a great tour for themselves. Address that! Find out your target audience. Think out what they are looking for in a tour package and meld your offerings according to their requirements.</p>  
-                <input type="button" value="Book Now" id="booknow" onclick="dialog()">
+                <a href="signup.html"><input type="button" value="Book Now" id="booknow"></a>
                 <input type="button" value="Explore" id="explore">
             </div>
             <img src="https://static.toiimg.com/thumb/msid-103892975,width-300,height-200.cms" class="Home-page-intro-image-container"> 
-            <div id="overlay"><p id="overlay-text">Here are some of the destinations !<br><input type="button" value="Go back!" onclick="off()"></p></div>
+            <div id="home-overlay">
+                <p id="home-overlay-text">Here are some of the destinations !<br>
+                    <img src="https://digital.ihg.com/is/image/ihg/vignette-collection-noonu-atoll-9970118335-4x3" class="home-overlay-destination" >
+                    <img src="https://cdn.britannica.com/65/162465-050-9CDA9BC9/Alps-Switzerland.jpg" class="home-overlay-destination">
+                    <img src="https://cdn.britannica.com/65/162465-050-9CDA9BC9/Alps-Switzerland.jpg" class="home-overlay-destination">" class="home-overlay-destination">
+                <input type="button" value="Go back!" onclick="off()"></p>
+            </div>
         </div>
         
         
@@ -69,11 +75,11 @@
         
            
         function on() {
-            document.getElementById("overlay").style.display = "block";
+            document.getElementById("home-overlay").style.display = "block";
         }
 
         function off() {
-            document.getElementById("overlay").style.display = "none";
+            document.getElementById("home-overlay").style.display = "none";
         }
     </script>
 </body>
